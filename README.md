@@ -7,11 +7,11 @@ This project was a part of my coursework at IIT Madras (Diploma in Data Science)
 # Submission File
 I had to predict a class for each ID in the test set for the target variable. The file should contain a header and have the following format:
 
-id	target
-0	"yes"
-1	"no"
-2	"no"
-etc.	
+<br>id	target
+<br>0	"yes"
+<br>1	"no"
+<br>2	"no"
+<br>etc.	
 
 The column 'target' consists of the predicted labels. It then compares these predictions with the actual labels to calculate the F1 score. This file needs to be named as submission.csv and saved in the working directory of the Kaggle before submission. 
 
