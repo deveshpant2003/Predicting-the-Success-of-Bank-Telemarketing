@@ -24,21 +24,21 @@ The data pertains to a banking institution's direct marketing campaigns. The mar
 * The file sample_submission.csv serves as an example of a submission in the correct format.
 
 # Input variables:
-1 last contact date: last contact date
-2 age (numeric)
-3 job : type of job
-4 marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
-5 education (categorical: "unknown","secondary","primary","tertiary")
-6 default: has credit in default? (binary: "yes","no")
-7 balance: the average yearly balance, expressed in euros (numeric)
-8 housing: has housing loan? (binary: "yes","no")
-9 loan: has personal loan? (binary: "yes","no")
-10 contact: contact communication type (categorical: "unknown","telephone","cellular")
-11 duration: last contact duration, in seconds (numeric)
-12 campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
-13 pdays: it refers to the number of days that have passed by after the client was last contacted from a previous campaign (numeric, -1 means the client was not previously contacted)
-14 previous: number of contacts performed before this campaign and for this client (numeric)
-15 poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+<br>1 last contact date: last contact date
+<br>2 age (numeric)
+<br>3 job : type of job
+<br>4 marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
+<br>5 education (categorical: "unknown","secondary","primary","tertiary")
+<br>6 default: has credit in default? (binary: "yes","no")
+<br>7 balance: the average yearly balance, expressed in euros (numeric)
+<br>8 housing: has housing loan? (binary: "yes","no")
+<br>9 loan: has personal loan? (binary: "yes","no")
+<br>10 contact: contact communication type (categorical: "unknown","telephone","cellular")
+<br>11 duration: last contact duration, in seconds (numeric)
+<br>12 campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+<br>13 pdays: it refers to the number of days that have passed by after the client was last contacted from a previous campaign (numeric, -1 means the client was not previously contacted)
+<br>14 previous: number of contacts performed before this campaign and for this client (numeric)
+<br>15 poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
 
 # Output variable (desired target):
-16 target: has the client subscribed a term deposit? (binary: "yes","no")
+<br>16 target: has the client subscribed a term deposit? (binary: "yes","no")
