@@ -20,8 +20,8 @@ The data pertains to a banking institution's direct marketing campaigns. The mar
 
 # Files
 * train.csv - the training set
-test.csv - the test set
-The file sample_submission.csv serves as an example of a submission in the correct format.
+* test.csv - the test set
+* The file sample_submission.csv serves as an example of a submission in the correct format.
 
 # Input variables:
 1 last contact date: last contact date
