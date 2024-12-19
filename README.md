@@ -42,3 +42,43 @@ The data pertains to a banking institution's direct marketing campaigns. The mar
 
 # Output variable (desired target):
 <br>**16. target:** has the client subscribed a term deposit? (binary: "yes","no")
+
+# EDA (Exploratory Data Analysis)
+* There are 15 columns and 39211 rows, including the target variable, and only categorical variables consist of null values. These variables are job, education, contact, and poutcome. This scenario holds true for both the train and test data. In the respective column, I replaced these null values with the most common non-null value.
+
+* The majority of jobs are blue-collar, management, and technician. Together, they comprise 55% of total jobs. Self-employed, retired, entrepreneurs, unemployed, housemaids, and students are more or less the same. Students are the least in numbers (3.6%).
+
+* The majority of them have the highest qualification in secondary education (53.7%), which is almost twice the tertiary education (29.6%) and three times the primary education (16.7%).
+
+* The majority of samples use cellular phones, approximately 35000, compared to around 4000 for telephone users.
+
+* The poutcome is mostly failure (87.7%), and the success rate is very low (5.7%).
+
+* The proportion of married people (57.9%) is more than double the number of singles and almost five times more than the divorced (13.4%).
+
+* Very few of them have credit in default (5.8%).
+
+* The difference between people having housing loans (55.2%) and the ones not having them is not much (44.8%).
+
+* Very few of them have taken personal loans (18.8%).
+
+* The data is highly imbalanced. 85% of samples have a target value of no, and the rest are yes.
+
+* The age appears to follow a log normal distribution, while all other numerical variables appear to have an exponential distribution, according to the histograms.
+
+* Looking at the box plots, age appears to have a few outliers between 75 and 90. Campaigns have a greater number of outliers compared to age, but still, it is nothing compared to other numerical variables, which are highly imbalanced. 
+
+* Variables like balance, duration, campaign, days, and previous share a positive correlation with each other, which varies between 0.4 and 0.8. It suggests that individuals with a substantial balance tend to make more inquiries about term deposits, receive frequent contact from the bank, and remain uncontacted throughout the campaign if they don't subscribe to term deposits. From a duration perspective, this could suggest that individuals who make more inquiries, subscribed, or expressed interest in previous campaigns receive more frequent contact in the current campaign. However, I believe all of these variables have an indirect correlation with each other via the balance variable. Also, they have a weak positive correlation with the value of poutcome being success. The campaign has a higher chance of success with people who have a sufficient balance in their bank accounts.
+
+* Interestingly, these variables also have a positive correlation ranging between 0.4 and 0.6, with the value of default being yes, meaning that people with a higher average yearly balance have high chances of having credit in default. This is probably because such people's balance includes the debt amount they have raised.
+
+* While analyzing the line graphs, I observed that every numerical variable repeats a pattern every year. Most likely, the data was only available for a year, but it was reproduced to span three years with minor variations. Also, all of the numerical variables are highly volatile, and their value just shoots and falls drastically on a monthly basis.
+
+# Best Model 
+I tried to train almost all the machine-learning models in the Scikit Learn library. However, the random forest classifier with the following value of hyperparameters turns out to be the best among them:
+* bootstrap: True, 
+* max_depth: 30,
+* max_features: 12,
+* min_samples_leaf: 6,
+* min_samples_split: 15,
+* n_estimators: 400
