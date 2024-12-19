@@ -85,7 +85,6 @@ I tried to train almost all the machine-learning models in the Scikit Learn libr
 
 Below is the classification report for this model over validation set:
 
-Classification Report:
                precision    recall  f1-score   support
 
           no       0.97      0.87      0.92      7821
