@@ -96,7 +96,8 @@ Below is the classification report for this model over validation set:
 weighted avg       0.90      0.86      0.87      9211
 ```
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/aa81527f-845d-421c-9292-363d5c05d98e" />
+<img src="https://github.com/user-attachments/assets/aa81527f-845d-421c-9292-363d5c05d98e" style="width:600px;" alt="image" />
+
 
 
 
