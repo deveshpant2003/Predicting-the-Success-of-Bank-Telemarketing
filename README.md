@@ -82,3 +82,20 @@ I tried to train almost all the machine-learning models in the Scikit Learn libr
 * min_samples_leaf: 6,
 * min_samples_split: 15,
 * n_estimators: 400
+
+Below is the classification report for this model over validation set:
+
+Classification Report:
+               precision    recall  f1-score   support
+
+          no       0.97      0.87      0.92      7821
+         yes       0.53      0.82      0.65      1390
+
+    accuracy                           0.86      9211
+   macro avg       0.75      0.85      0.78      9211
+weighted avg       0.90      0.86      0.87      9211
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/aa81527f-845d-421c-9292-363d5c05d98e" />
+
+
+
