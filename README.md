@@ -41,7 +41,7 @@ The data pertains to a banking institution's direct marketing campaigns. The mar
 <br>**15. poutcome:** outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
 
 # Output variable (desired target):
-<br>**16. target:** has the client subscribed a term deposit? (binary: "yes","no")
+<br>**target:** has the client subscribed a term deposit? (binary: "yes","no")
 
 # EDA (Exploratory Data Analysis)
 * There are 15 columns and 39211 rows, including the target variable, and only categorical variables consist of null values. These variables are job, education, contact, and poutcome. This scenario holds true for both the train and test data. In the respective column, I replaced these null values with the most common non-null value.
